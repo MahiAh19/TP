@@ -1,13 +1,43 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from rest_framework.response import Response
 from rest_framework.decorators import api_view
 from rest_framework import status
 from .models import Customer, Queries
 from .serializers import CustomerSerializer, QueriesSerializer
 
+from django.contrib import messages
+from django.core.mail import send_mail
+
 # Create your views here.
 def home(request): 
+    if request.method == 'POST':
+        # Process the form data here
+        # ...
+
+        name = request.POST.get('name')
+        email = request.POST.get('email')
+        phone = request.POST.get('phone')
+        destination = request.POST.get('destination')
+        departure = request.POST.get('departure')
+        date_of_travel = request.POST.get('date_of_travel')
+
+        # Send email
+        subject = 'New Travel Query Submission'
+        message = f'Name: {name}\nEmail: {email}\nPhone: {phone}\nDestination: {destination}\nDeparture: {departure}\nDate of Travel: {date_of_travel}'
+        from_email = 'ahsanmahi019@gmail.com'  # Use the same email as in EMAIL_HOST_USER
+        recipient_list = ['organization@example.com']  # Replace with the organization's email address
+        
+        send_mail(subject, message, from_email, recipient_list, fail_silently=False)
+
+        # Add a success message to the user's session
+        messages.success(request, 'Form submitted successfully!')
+
+        return redirect('thankyou')
+
     return render(request, 'home.html')
+
+def thankyou(request):
+    return render(request, 'thankyou.html')
 
 @api_view(['GET'])
 def customer_list(request):
