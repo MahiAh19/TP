@@ -12,7 +12,7 @@ from django.core.mail import send_mail
 def home(request): 
     if request.method == 'POST':
         # Process the form data here
-        # ...
+        
 
         name = request.POST.get('name')
         email = request.POST.get('email')
@@ -20,6 +20,13 @@ def home(request):
         destination = request.POST.get('destination')
         departure = request.POST.get('departure')
         date_of_travel = request.POST.get('date_of_travel')
+
+        # add to database 
+        # Create Customer instance
+        customer = Customer.objects.create(name=name, email=email, phone_number=phone)
+        # Create Queries instance
+        query = Queries.objects.create(destination=destination, departure=departure, date_of_travel=date_of_travel, customer=customer)
+
 
         # Send email
         subject = 'New Travel Query Submission'

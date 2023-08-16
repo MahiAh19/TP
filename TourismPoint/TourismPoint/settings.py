@@ -76,10 +76,24 @@ WSGI_APPLICATION = 'TourismPoint.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'tp',
+        'USER': 'mahima',
+        'PASSWORD': 'upoma19cupcakes',
+        'HOST': 'localhost',  # Use 'localhost' if your database is on the same machine
+        'PORT': '',  # Leave empty to use the default port (5432)
+        'OPTIONS': {
+            'options': '-c search_path=tp_schema,public',
+        },
     }
 }
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
 
 # Email settings
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
