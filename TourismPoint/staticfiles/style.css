@@ -120,23 +120,23 @@ p{
 	transition:all 0.35s ease-in-out;
 }
 .btn.btn-primary{
-	border:1px solid #42c0d9;
-	background:#42c0d9;
+	border:1px solid #C41E3A;
+	background:#C41E3A;
 	color:#fff;
 }
 .btn.btn-primary:hover{
 	background:none;
-	border-color:#42c0d9;
-	color:#42c0d9;
+	border-color:#C41E3A;
+	color:#C41E3A;
 }
 .btn.btn-default{
-	border:1px solid #42c0d9;
+	border:1px solid #C41E3A;
 	background:none;
-	color:#42c0d9;
+	color:#C41E3A;
 }
 .btn.btn-default:hover{
-	background:#42c0d9;
-	border-color:#42c0d9;
+	background:#C41E3A;
+	border-color:#C41E3A;
 	color:#fff;;
 }
 
@@ -249,14 +249,14 @@ section{
 }
 .navbar-default .navbar-nav > li > a:hover::before,
 .navbar-default .navbar-nav > .active > a::before{
-	background-color:#42c0d9;
+	background-color:#C41E3A;
 	width:100%;
 }
 .navbar-default .navbar-nav > .active > a, 
 .navbar-default .navbar-nav > .active > a:focus, 
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > li > a:hover{
-	color:#42c0d9;
+	color:#C41E3A;
 	background:none;
 }
 .navbar-right{
@@ -368,7 +368,7 @@ section{
 }
 .control:hover{
 	background:#fff;
-	color:#42c0d9;
+	color:#C41E3A;
 }
 .left.control{
 	left:10px;
@@ -408,7 +408,7 @@ section{
     margin: 0 0 10px;
     vertical-align: middle;
     width: 80px;
-	color:#42c0d9;
+	color:#C41E3A;
 	background:#fff;
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
@@ -420,7 +420,7 @@ section{
 	transition:all 0.4s ease-in-out;
 }
 .service-list:hover .fa{
-	background:#42c0d9;
+	background:#C41E3A;
 	color:#fff;
 }
 
@@ -536,7 +536,7 @@ section{
 	height:auto;
 	margin:0 0 50px;
 	padding-bottom:25px;
-	background:url(img/icon/icon.png) no-repeat center bottom;
+	/* background:url(img/icon/icon.png) no-repeat center bottom; */
 }
 .section-title h1{
 	font-family: 'Dancing Script', cursive;
@@ -689,7 +689,7 @@ section{
 	-moz-transform:translateX(-50%);
 	-ms-transform:translateX(-50%);
 	transform:translateX(-50%);
-	background:#42c0d9;
+	background:#C41E3A;
 	-webkit-border-radius:5px;
 	-moz-border-radius:5px;
 	border-radius:5px;
@@ -727,7 +727,7 @@ section{
 	cursor:pointer;
 }
 .discount-info a:hover{
-	color:#42c0d9;
+	color:#C41E3A;
 }
 .tour-item span .fa{
 	color:#777;
@@ -790,7 +790,7 @@ section{
 	transition:all 0.3s ease-in-out;
 }
 .count-section li:hover .fa{
-	background:#42c0d9;
+	background:#C41E3A;
 	color:#fff;
 }
 
@@ -821,9 +821,9 @@ section{
 }
 #filter-list li.active,
 #filter-list li:hover{
-	background:#42c0d9;
+	background:#C41E3A;
 	color:#fff;
-	border-color:#42c0d9;
+	border-color:#C41E3A;
 }
 .gallery-item{
 	width:100%;
@@ -922,7 +922,7 @@ section{
 }
 .gallery-item a:hover{
 	background:#fff;
-	color:#42c0d9;
+	color:#C41E3A;
 }
 .gallery-item li:hover h2,
 .gallery-item li:hover a{
@@ -956,7 +956,7 @@ section{
 	transition:all 0.5s ease-in-out;
 }
 .post:hover{
-	border-color:#42c0d9;
+	border-color:#C41E3A;
 }
 .post-thumb{
 	width:100%;
@@ -1010,7 +1010,7 @@ section{
 	height:auto;
 	background:#fff;
 	left:50%;
-	color:#42c0d9;
+	color:#C41E3A;
 	font-size:20px;
 	width:42px;
 	line-height:42px;
@@ -1042,7 +1042,7 @@ section{
 }
 .post-by a:hover,
 .post-comments a:hover{
-	color:#42c0d9;
+	color:#C41E3A;
 }
 .post-date{
 	font-size:14px;
@@ -1051,7 +1051,7 @@ section{
 }
 .post-comments{
 	font-size:14px;
-	color:#42c0d9;
+	color:#C41E3A;
 	margin-left:10px;
 }
 .post:hover .overlay {
@@ -1128,14 +1128,14 @@ section{
 	display:inline-block;
 	width:12px;
 	height:12px;
-	border:1px solid #42c0d9;
+	border:1px solid #C41E3A;
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
     border-radius: 50%;
 	margin:0 5px;
 }
 .owl-dot.active{
-	background:#42c0d9;
+	background:#C41E3A;
 }
 
 /***************** Contact Section *************************/
@@ -1196,7 +1196,7 @@ section{
 	color:inherit;
 }
 .contact-left p a:hover{
-	color:#42c0d9;
+	color:#C41E3A;
 }
 .form-control{
 	height:50px;
@@ -1207,7 +1207,7 @@ section{
 	font-weight:300;
 }
 .form-control:focus{
-	border-color:#42c0d9;
+	border-color:#C41E3A;
 }
 .contact-right .form-control::-moz-placeholder{
 	opacity:1;
@@ -1287,7 +1287,7 @@ section{
 	text-decoration:none;
 }
 .meta > span a:hover{
-	color:#42c0d9;
+	color:#C41E3A;
 }
 .meta > span.date{
 	border:none;
@@ -1315,7 +1315,7 @@ blockquote{
 	color:#777;
 	font-weight:300;
 	font-style:italic;
-	border-color:#42c0d9;
+	border-color:#C41E3A;
 	background:#faf9f9;
 }
 .post_bottom{
@@ -1351,7 +1351,7 @@ blockquote{
 	text-decoration:none;
 	color:#fff;
 	line-height:18px;
-	background:#42c0d9;
+	background:#C41E3A;
 	border:3px solid #fff;
 	-webkit-border-radius:50%;
 	-moz-border-radius:50%;
@@ -1434,7 +1434,7 @@ blockquote{
 	font-weight:300;
 }
 .comment-list .list-inline a:hover{
-	color:#42c0d9;
+	color:#C41E3A;
 }
 .content-block .form-control{
 	border-color:#ccc;
@@ -1460,7 +1460,7 @@ blockquote{
 .sidebar-item h3{
 	padding:0 0 7px;
 	margin:0 0 15px;
-	border-bottom:1px solid #42c0d9;
+	border-bottom:1px solid #C41E3A;
 	font-family:"Dancing Script",cursive;
 }
 .sidebar-item .form-control{
@@ -1469,7 +1469,7 @@ blockquote{
 	color:#777;
 }
 .sidebar-item .form-control:focus{
-	border-color:#42c0d9;
+	border-color:#C41E3A;
 }
 .sidebar-item .input-group-addon{
 	padding:0;
@@ -1483,7 +1483,7 @@ blockquote{
     height: 38px;
     padding: 0 8px;
     text-transform: uppercase;
-	background:#42c0d9;
+	background:#C41E3A;
 }
 .category-list,
 .archive-list{
@@ -1506,8 +1506,8 @@ blockquote{
 }
 .category-list li a:hover,
 .archive-list li a:hover{
-	color:#42c0d9;
-	border-color:#42c0d9;
+	color:#C41E3A;
+	border-color:#C41E3A;
 }
 .tag-list li{
 	width:auto;
@@ -1528,8 +1528,8 @@ blockquote{
 }
 .tag-list li a:hover{
 	color:#fff;
-	border-color:#42c0d9;
-	background:#42c0d9;
+	border-color:#C41E3A;
+	background:#C41E3A;
 }
 
 #booking-form .fa{
@@ -1581,7 +1581,7 @@ blockquote{
 }
 #footer li a:hover{
 	color:#fff;
-	background:#42c0d9;
+	background:#C41E3A;
 }
 #footer p{
 	margin:0;
@@ -1605,7 +1605,7 @@ blockquote{
 	text-align:center;
 }
 .back-top i {
-    background: #42c0d9none repeat scroll 0 0;
+    background: #C41E3Anone repeat scroll 0 0;
     border-radius: 50%;
     color: #fff;
     font-size: 24px;
@@ -1887,7 +1887,7 @@ h3{
 }
 .navbar-default .navbar-toggle{
 	margin:11px 0;
-	border-color:#42c0d9;
+	border-color:#C41E3A;
 	-webkit-border-radius:4px;
 	-moz-border-radius:4px;
 	border-radius:4px;
@@ -1895,7 +1895,7 @@ h3{
 .navbar-default .navbar-toggle .icon-bar,
 .navbar-default .navbar-toggle:focus, 
 .navbar-default .navbar-toggle:hover{
-	background-color:#42c0d9;
+	background-color:#C41E3A;
 }
 .navbar-default .navbar-toggle:focus .icon-bar, 
 .navbar-default .navbar-toggle:hover .icon-bar{
