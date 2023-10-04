@@ -12,27 +12,29 @@ from django.core.mail import send_mail
 def home(request): 
     if request.method == 'POST':
         # Process the form data here
-        
-
         name = request.POST.get('name')
         email = request.POST.get('email')
         phone = request.POST.get('phone')
+        flight = request.POST.get('flight')
+        adults = request.POST.get('adults')
+        children = request.POST.get('children')
+        infants = request.POST.get('infants')
         destination = request.POST.get('destination')
         departure = request.POST.get('departure')
         date_of_travel = request.POST.get('date_of_travel')
 
         # add to database 
         # Create Customer instance
-        customer = Customer.objects.create(name=name, email=email, phone_number=phone)
+        customer = Customer.objects.create(name=name, email=email, phone_number=phone, adults=adults, children=children, infants=infants)
         # Create Queries instance
-        query = Queries.objects.create(destination=destination, departure=departure, date_of_travel=date_of_travel, customer=customer)
+        query = Queries.objects.create(destination=destination, departure=departure, date_of_travel=date_of_travel, customer=customer, flight= flight)
 
 
         # Send email
-        subject = 'New Travel Query Submission'
-        message = f'Name: {name}\nEmail: {email}\nPhone: {phone}\nDestination: {destination}\nDeparture: {departure}\nDate of Travel: {date_of_travel}'
+        subject = 'New Travel Query'
+        message = f'Name: {name}\nEmail: {email}\nPhone: {phone}\nFlight: {flight}\nDestination: {destination}\nDeparture: {departure}\nAdults: {adults}\nChildren: {children}\nInfants: {infants}\nDate of Travel: {date_of_travel}'
         from_email = 'ahsanmahi019@gmail.com'  # Use the same email as in EMAIL_HOST_USER
-        recipient_list = ['organization@example.com']  # Replace with the organization's email address
+        recipient_list = ['tourism.point19@gmail.com']  # Replace with the organization's email address
         
         send_mail(subject, message, from_email, recipient_list, fail_silently=False)
 

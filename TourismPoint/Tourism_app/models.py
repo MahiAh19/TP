@@ -33,15 +33,26 @@ class Customer(models.Model):
     name = models.CharField(max_length= 100)
     phone_number = models.CharField(max_length=20)
     email = models.EmailField()
+    adults = models.PositiveIntegerField(default=0)
+    children = models.PositiveIntegerField(default=0)
+    infants = models.PositiveIntegerField(default=0)
 
     def __str__(self):
         return self.name
 
 class Queries(models.Model):
+
+    flight_choices = [
+        ('One-way', 'Flight Option 1'),
+        ('Round-trip', 'Flight Option 2'),
+    ]
+
     destination = models.CharField(max_length= 20)
     departure = models.CharField(max_length= 20)
+    flight = models.CharField(max_length=20, choices= flight_choices, default= 'one-way')
     date_of_travel = models.DateField()
     customer = models.ForeignKey(Customer, on_delete=models.CASCADE)
+    
 
     def __str__(self):
         return f"{self.customer.name} - {self.destination}"

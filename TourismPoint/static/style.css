@@ -36,6 +36,8 @@ img{
 	border:none;
 	outline:none;
 	max-width:100%;
+	padding: 0px 0; /* Adds 10 pixels of padding to the top and bottom, but no padding on the left and right */
+
 }
 a,a:active,a:focus,a:hover{
 	outline:none;
@@ -1611,7 +1613,7 @@ blockquote{
 	text-align:center;
 }
 .back-top i {
-    background: #C41E3Anone repeat scroll 0 0;
+    background: #C41E3A none repeat scroll 0 0;
     border-radius: 50%;
     color: #fff;
     font-size: 24px;
@@ -1878,7 +1880,7 @@ h3{
 	margin:5px 0;
 }
 .navbar{
-	padding:9px 0;
+	padding:5px 0;
 	background:rgba(0, 0, 0, 0.85) none repeat scroll 0 0;
 }
 .navbar-default .navbar-nav > li > a, 
