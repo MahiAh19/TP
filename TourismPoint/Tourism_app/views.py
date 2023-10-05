@@ -48,6 +48,9 @@ def home(request):
 def thankyou(request):
     return render(request, 'thankyou.html')
 
+def tour_details(request):
+    return render(request, 'tour-details.html')
+
 @api_view(['GET'])
 def customer_list(request):
     customers = Customer.objects.all()
