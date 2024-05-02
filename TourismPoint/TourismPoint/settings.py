@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-t1w$_-wdpk_8^*bt^l@v*2_x*ds^fi6@*nuyypto6i%)^%35ma
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["127.0.0.1", ".vercel.app", ".now.sh"]
 
 
 # Application definition
@@ -82,7 +82,7 @@ DATABASES = {
         'USER': 'mahima',
         'PASSWORD': 'upoma19cupcakes',
         'HOST': 'localhost',  # Use 'localhost' if your database is on the same machine
-        'PORT': '',  # Leave empty to use the default port (5432)
+        'PORT': '5432',  # Leave empty to use the default port (5432)
         'OPTIONS': {
             'options': '-c search_path=tp_schema,public',
         },
