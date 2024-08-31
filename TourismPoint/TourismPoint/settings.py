@@ -78,7 +78,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'TourismPoint.wsgi.application'
+WSGI_APPLICATION = 'TourismPoint.wsgi.app'
 
 
 # Database
