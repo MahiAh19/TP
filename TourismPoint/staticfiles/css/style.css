@@ -180,7 +180,7 @@ section{
 	position:absolute;
 	left:50%;
 	top:50%;
-	background:url(img/loader.gif) no-repeat center center;
+	background:url('../img/spinner.gif') no-repeat center center;
 	-webkit-transform:translate(-50%,-50%);
 	-moz-transform:translate(-50%,-50%);
 	-ms-transform:translate(-50%,-50%);
@@ -536,7 +536,7 @@ section{
 	height:auto;
 	margin:0 0 50px;
 	padding-bottom:25px;
-	/* background:url(img/icon/icon.png) no-repeat center bottom; */
+	background:url('../img/icon/icon.png') no-repeat center bottom;
 }
 .section-title h1{
 	font-family: 'Dancing Script', cursive;
