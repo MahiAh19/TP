@@ -28,13 +28,13 @@ DEBUG = True
 
 ALLOWED_HOSTS = ["127.0.0.1", ".vercel.app", ".now.sh"]
 
-SECURE_SSL_REDIRECT = True #Redirect all HTTP requests to HTTPS.
+# SECURE_SSL_REDIRECT = True #Redirect all HTTP requests to HTTPS.
 
-CSRF_COOKIE_SECURE = True
-SESSION_COOKIE_SECURE = True #Ensure cookies are only sent over HTTPS.
+# CSRF_COOKIE_SECURE = True
+# SESSION_COOKIE_SECURE = True #Ensure cookies are only sent over HTTPS.
 
-SECURE_HSTS_SECONDS = 31536000  # 1 year
-SECURE_HSTS_INCLUDE_SUBDOMAINS = True #Enable HTTP Strict Transport Security to enforce HTTPS.
+# SECURE_HSTS_SECONDS = 31536000  # 1 year
+# SECURE_HSTS_INCLUDE_SUBDOMAINS = True #Enable HTTP Strict Transport Security to enforce HTTPS.
 
 
 # Application definition
