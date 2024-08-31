@@ -8,8 +8,12 @@ from .serializers import CustomerSerializer, QueriesSerializer
 from django.contrib import messages
 from django.core.mail import send_mail
 
+import logging
+logger = logging.getLogger(__name__)
+
 # Create your views here.
 def home(request): 
+    logger.debug('Home view accessed')
     if request.method == 'POST':
         # Process the form data here
         name = request.POST.get('name')
@@ -22,6 +26,8 @@ def home(request):
         destination = request.POST.get('destination')
         departure = request.POST.get('departure')
         date_of_travel = request.POST.get('date_of_travel')
+
+        logger.debug(f'Form submitted with data: {request.POST}')
 
         # add to database 
         # Create Customer instance

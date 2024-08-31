@@ -1,40 +1,42 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title>Thank You</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f8f9fa; /* Light gray background */
-        }
-        .container {
-            text-align: center;
-            padding: 100px 0;
-        }
-        h1 {
-            color: #C41E3A;
-            font-size: 36px;
-            margin-bottom: 20px;
-        }
-        p {
-            color: #333; /* Dark gray text */
-            font-size: 18px;
-            margin-bottom: 30px;
-        }
-        a {
-            color: #C41E3A;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f8f9fa; /* Light gray background */
+      }
+      .container {
+        text-align: center;
+        padding: 100px 0;
+      }
+      h1 {
+        color: #c41e3a;
+        font-size: 36px;
+        margin-bottom: 20px;
+      }
+      p {
+        color: #333; /* Dark gray text */
+        font-size: 18px;
+        margin-bottom: 30px;
+      }
+      a {
+        color: #c41e3a;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <h1>Thank You for Submitting Your Query!</h1>
-        <p>We appreciate your interest. Our team will get back to you soon. <a href="{% url 'home' %}">Back to Home</a></p>
+      <h1>Thank You for Submitting Your Query!</h1>
+      <p>
+        We appreciate your interest. Our team will get back to you soon.
+        <a href="{% url 'home' %}">Back to Home</a>
+      </p>
     </div>
-</body>
+  </body>
 </html>
-
