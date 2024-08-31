@@ -15,5 +15,5 @@ os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'TourismPoint.settings')
 
 application = get_wsgi_application()
 
-# add this vercel variable
-app = application
+# # add this vercel variable
+# app = application

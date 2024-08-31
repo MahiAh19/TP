@@ -28,6 +28,14 @@ DEBUG = True
 
 ALLOWED_HOSTS = ["127.0.0.1", ".vercel.app", ".now.sh"]
 
+SECURE_SSL_REDIRECT = True #Redirect all HTTP requests to HTTPS.
+
+CSRF_COOKIE_SECURE = True
+SESSION_COOKIE_SECURE = True #Ensure cookies are only sent over HTTPS.
+
+SECURE_HSTS_SECONDS = 31536000  # 1 year
+SECURE_HSTS_INCLUDE_SUBDOMAINS = True #Enable HTTP Strict Transport Security to enforce HTTPS.
+
 
 # Application definition
 
@@ -52,9 +60,6 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-# Configure static file storage
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
-
 ROOT_URLCONF = 'TourismPoint.urls'
 
 TEMPLATES = [
@@ -73,7 +78,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'TourismPoint.wsgi.app'
+WSGI_APPLICATION = 'TourismPoint.wsgi.application'
 
 
 # Database
@@ -146,6 +151,9 @@ STATIC_URL = '/static/'
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+
+# Configure static file storage
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 
 # Default primary key field type
