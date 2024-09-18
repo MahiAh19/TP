@@ -218,6 +218,14 @@ section{
 	height:auto;
 	padding:11px 0;
 }
+
+.navbar-brand img {
+    max-width: 150px; /* Adjust this value as needed */
+    height: auto; /* Maintain aspect ratio */
+    display: inline-block;
+    vertical-align: middle;
+}
+
 .navbar-default .navbar-nav > li{
 	margin-left:22px;
 }
