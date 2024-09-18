@@ -536,7 +536,8 @@ section{
 	height:auto;
 	margin:0 0 50px;
 	padding-bottom:25px;
-	background:url('../img/icon/icon.png') no-repeat center bottom;
+	border-bottom: 3px solid #C41E3A; /* Adjust the thickness as needed */
+	background: none; /* Remove the background image */
 }
 .section-title h1{
 	font-family: 'Dancing Script', cursive;
