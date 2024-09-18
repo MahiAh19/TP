@@ -180,7 +180,7 @@ section{
 	position:absolute;
 	left:50%;
 	top:50%;
-	background:url('../img/spinner.gif') no-repeat center center;
+	background:url("../img/spinner.e09a83d43df6.gif") no-repeat center center;
 	-webkit-transform:translate(-50%,-50%);
 	-moz-transform:translate(-50%,-50%);
 	-ms-transform:translate(-50%,-50%);
