@@ -12,7 +12,7 @@ import logging
 logger = logging.getLogger(__name__)
 
 # Create your views here.
-def home(request): 
+def index(request): 
     logger.debug('Home view accessed')
     if request.method == 'POST':
         # Process the form data here
@@ -49,7 +49,7 @@ def home(request):
 
         return redirect('thankyou')
 
-    return render(request, 'home.html')
+    return render(request, 'index.html')
 
 def thankyou(request):
     return render(request, 'thankyou.html')
