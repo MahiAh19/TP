@@ -26,12 +26,12 @@ SECRET_KEY = 'django-insecure-t1w$_-wdpk_8^*bt^l@v*2_x*ds^fi6@*nuyypto6i%)^%35ma
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["127.0.0.1", ".vercel.app", ".now.sh"]
+ALLOWED_HOSTS = ["127.0.0.1", ".vercel.app", ".now.sh", 'tourism-point.com', 'www.tourism-point.com']
 
-# SECURE_SSL_REDIRECT = True #Redirect all HTTP requests to HTTPS.
+SECURE_SSL_REDIRECT = True #Redirect all HTTP requests to HTTPS.
 
-# CSRF_COOKIE_SECURE = True
-# SESSION_COOKIE_SECURE = True #Ensure cookies are only sent over HTTPS.
+CSRF_COOKIE_SECURE = True
+SESSION_COOKIE_SECURE = True #Ensure cookies are only sent over HTTPS.
 
 # SECURE_HSTS_SECONDS = 31536000  # 1 year
 # SECURE_HSTS_INCLUDE_SUBDOMAINS = True #Enable HTTP Strict Transport Security to enforce HTTPS.
